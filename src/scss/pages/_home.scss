@@ -1,0 +1,444 @@
+@use "../abstracts" as *;
+
+.hero-section {
+    margin-top: 109px;
+    margin-bottom: 67px;
+    &__content {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between; 
+        gap: 20px;
+        .hero-section__title {
+            max-width: 568px;
+            h1 {
+                font-size: 52px;
+                font-weight: 600;
+                line-height: 65px;
+                color: #363738;
+            }
+            p {
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 24px;
+                color: #6B6B6C;
+                margin: 40px 0;
+            }
+            a {
+                border-bottom: 3px solid #FFCE50;
+                color: #363738;
+                font-family: Exo700;
+                font-size: 16px;
+                line-height: 24px;
+                padding-bottom: 3px;
+            }
+        }
+    }
+}
+.delivery-section {
+    margin-bottom: 67px;
+    &__content {
+        box-shadow: 0px 4px 20px 0px #00000026;
+        border-radius: 20px;
+        .delivery-section__cards {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 40px 80px;
+            justify-content: space-between;
+            gap: 20px;
+            .delivery-section__card {
+                width: 228px;
+                h3 {
+                    // font-family: Exo600;
+                    margin-top: 24px;
+                    margin-bottom: 16px;
+                    font-weight: 600;
+                    font-size: 20px;
+                    line-height: 27px;
+                    color: #363738;
+                }
+                p {
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 24px;
+                    color: #6B6B6C;
+                }
+            }
+            .deliveryLine {
+                width: 1px;
+                height: 261px;
+                background: #6B6B6C;
+                opacity: 0.3;
+            }
+        }
+    }
+}
+.prices-section {
+    margin-bottom: 67px;
+    &__content {
+        .prices-section__title {
+            h2 {
+                font-size: 48px;
+                font-weight: 600;
+                line-height: 60px;
+                color: #363738;
+                margin-bottom: 32px;
+            }
+            p {
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 24px;
+                color: #6B6B6C;
+                margin-bottom: 56px;
+            }
+        }
+        .prices-section__cards {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            gap: 30px;
+            .prices-section__card {
+                max-width: 393px;
+                box-shadow: 0px 4px 15px 0px #0000001F;
+                border-radius: 10px;
+                img {
+                    width: 100%;
+                }
+                .prices-section__cards-title {
+                    padding: 24px 32px 32px 32px;
+                    h3 {
+                        font-size: 20px;
+                        font-weight: 600;
+                        line-height: 27px;
+                        color: #363738;
+                    }
+                    p {
+                        font-size: 16px;
+                        font-weight: 400;
+                        line-height: 24px;
+                        color: #6B6B6C;
+                        margin-top: 16px;
+                        margin-bottom: 32px;
+                    }
+                    a {
+                        border-bottom: 3px solid #FFCE50;
+                        color: #363738;
+                        font-size: 16px;
+                        font-weight: 600;
+                        line-height: 21.6px;
+                        padding-bottom: 4px;
+                    }
+                }
+            }
+        }
+    }
+}
+.services-section {
+    margin-bottom: 120px;
+    &__content {
+        h2 {
+            font-size: 48px;
+            font-weight: 600;
+            line-height: 60px;
+            color: #363738;
+            margin-bottom: 48px;
+        }
+        .services-section__cards {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            .services-section__card {
+                padding: 32px 96px;
+                box-shadow: 0px 4px 15px 0px #0000001F;
+                border-radius: 4px;
+                display: flex;
+                align-items: center;
+                gap: 56px;
+                .services-section__card-title {
+                    h3 {
+                        display: inline-block;
+                        font-size: 20px;
+                        font-weight: 600;
+                        line-height: 25px;
+                        color: #363738;
+                    }
+                    div {
+                        background: #FFCE50;
+                        width: 86px;
+                        height: 3px;
+                        margin: 24px 0;
+                    }
+                    p {
+                        max-width: 598px;
+                        font-size: 16px;
+                        font-weight: 400;
+                        line-height: 24px;
+                        color: #6B6B6C;
+                    }
+                }
+            }
+        }
+    }
+}
+.partners-section {
+    margin-bottom: 130px;
+    &__content {
+        h2{
+            color: #363738;
+            font-size: 48px;
+            font-weight: 600;
+            line-height: 60px;
+            margin-bottom: 90px;
+        }
+        .partners-section__partners {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 74px;
+            .partners-section__partner {
+                width: 198px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: end;
+                text-align: center;
+                h3 {
+                    font-size: 20px;
+                    font-weight: 600;
+                    line-height: 27px;
+                    color: #363738;
+                    margin-top: 30px;
+                    margin-bottom: 10px;
+                }
+                p {
+                    font-size: 14px;    
+                    line-height: 21px;
+                    color: #6B6B6C;
+                }
+            }
+            .partnersLine {
+                width: 1px !important;
+                height: 183px !important;
+                background: #D7D7DD !important;
+            }
+            .partnersLine:nth-child(8) {
+                display: none;
+            }
+        }
+    }
+}
+.employees-section {
+    margin-bottom: 151px;
+    &__content {
+        h2 {
+            font-size: 48px;
+            font-weight: 600;
+            line-height: 60px;
+            color: #363738;
+            margin-bottom: 72px;
+        }
+        .employees-section__cards {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            .employees-section__card {
+                overflow: hidden;
+                position: relative;
+                max-width: 605px;
+                border-radius: 10px;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                gap: 40px;
+                padding: 32px 83px 40px 83px;
+                box-shadow: 0px 4px 15px 0px #00000026;
+                .employees-section__card-title {
+                    h3 {
+                        font-size: 20px;
+                        font-weight: 600;
+                        line-height: 24px;
+                        color: #363738;
+                    }
+                    p {
+                        margin-top: 12px;
+                        margin-bottom: 16px;
+                        font-size: 14px;
+                        font-weight: 400;
+                        line-height: 21px;
+                        color: #6B6B6C;
+                    }
+                    article {
+                        height: 3px;
+                        width: 86px;
+                        margin-bottom: 35px;
+                        background: #FFCE50;
+                    }
+                    div {
+                        display: flex;
+                        align-items: center;
+                        gap: 20px;
+                    }
+                }
+                .employees-section__card-bg {
+                    background: #0B7572;
+                    width: 51px;
+                    height: 100%;
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    left: 0;
+                }
+            }
+        }
+    }
+}
+.trucks-section {
+    margin-bottom: 166px;
+    .container {
+        img {
+            width: 100%;
+        }
+    }
+}
+
+
+@media (max-width: 1272px) {
+    .employees-section {
+        &__content {
+            .employees-section__cards {
+                .employees-section__card {
+                    max-width: 520px !important;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1255px) {
+    .hero-section {
+        &__content {
+            .hero-section__title {
+                h1 {
+                    font-size: 34px;
+                    line-height: 40px;
+                }
+                p {
+                    margin: 20px 0;
+                }
+            }
+            img {
+                width: 100%;
+                order: -1;
+            }
+        }
+    }
+}
+
+@media (max-width: 1100px) {
+    .employees-section {
+        &__content {
+            .employees-section__cards {
+                .employees-section__card {
+                    flex-wrap: wrap;
+                    max-width: 2000px !important;
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 958px) {
+    .delivery-section {
+        &__content {
+            .delivery-section__cards {
+                flex-direction: column;
+                padding: 20px 40px;
+                align-items: center;
+                .delivery-section__card {
+                    max-width: 400px;
+                    width: 100%;
+                    h3 {}
+                }
+                .deliveryLine {
+                    height: 1px;
+                    width: 100%;
+                }
+            }
+        }
+    }
+    .services-section {
+        &__content {
+            .services-section__card {
+                padding: 32px 26px !important;
+                flex-wrap: wrap;
+                img {
+                    width: 100% !important;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 552px) {
+    .prices-section {
+        h2 {
+            font-size: 36px !important;
+            line-height: 48px !important;
+        }  
+    }
+    .services-section {
+        h2 {
+            font-size: 36px !important;
+            line-height: 48px !important;
+        }
+    }
+}
+
+@media (max-width: 537px) {
+    .employees-section {
+        &__content {
+            .employees-section__cards {
+                .employees-section__card {
+                    padding: 32px 50px 40px 50px;
+                    align-items: center;  
+                    justify-content: center;
+                    text-align: center;
+                    article {
+                        width: 100% !important;
+                    }
+                    div {
+                        justify-content: center;
+                    }  
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 656px) {
+    .partners-section {
+        &__content {
+            h2 {
+                font-size: 36px !important;
+                line-height: 48px !important;
+            }  
+            .partners-section__partners {
+                flex-direction: column !important;
+                align-items: center;
+                .partners-section__partner {
+                }
+                .partnersLine {
+                    width: 100% !important;
+                    height: 1px !important;
+                }   
+                .partnersLine:nth-child(8) {
+                    display: block;
+                    width: 100%;
+                    height: 0.5px !important;
+                } 
+            }
+        }
+    }
+}
